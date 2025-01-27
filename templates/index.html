@@ -8,6 +8,14 @@
     
 <body>
     <h1>Welcome to the Personality Quiz</h1>
+
+
+   <!-- Display error message if present -->
+   {% if error %}
+   <p style="color: red;">{{ error }}</p>
+{% endif %}
+
+
     <form action="/result" method="POST">
         {% for q in questions %}
             <div>
