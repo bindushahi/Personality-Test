@@ -25,26 +25,24 @@ form {
     margin: 0 auto;
 }
 
-div {
+div, label, p {
     margin-bottom: 20px;
     text-align: left;
 }
 
 p {
     font-size: 1.1em;
-    margin-bottom: 10px;
     color: #555;
 }
 
 label {
     font-size: 1em;
     display: block;
-    margin: 10px 0;
-    background-color: #f9f9f9;
-    border-radius: 5px;
     padding: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
+    background-color: #f9f9f9;
+    border-radius: 5px;
 }
 
 label:hover {
@@ -56,19 +54,19 @@ input[type="checkbox"] {
     transform: scale(1.2);
 }
 
-button {
+button, a {
     background-color: #4CAF50;
     color: white;
     padding: 15px 30px;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.2em;
+    transition: background-color 0.3s;
     margin-top: 20px;
-    transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
-button:hover {
+button:hover, a:hover {
     background-color: #45a049;
 }
 
@@ -78,19 +76,4 @@ video {
     height: auto;
     border-radius: 8px;
     margin-top: 20px;
-}
-
-a {
-    display: inline-block;
-    margin-top: 30px;
-    font-size: 1.2em;
-    text-decoration: none;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-a:hover {
-    background-color: #45a049;
 }
