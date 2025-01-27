@@ -10,10 +10,13 @@
     <h1>Welcome to the Personality Quiz</h1>
 
 
-   <!-- Display error message if present -->
-   {% if error %}
-   <p style="color: red;">{{ error }}</p>
+  <!-- Display error message if present -->
+{% if error %}
+<p style="color: red; font-size: 1.2em; font-weight: bold; text-align: center;">
+   {{ error }}
+</p>
 {% endif %}
+
 
 
     <form action="/result" method="POST">
